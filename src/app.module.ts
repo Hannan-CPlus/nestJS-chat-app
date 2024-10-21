@@ -7,8 +7,8 @@ import { PusherService } from './pusher.service';
 
 @Module({
   imports: [ConfigModule.forRoot({
-    isGlobal: true, // makes the configuration available globally
-  }),],
+      isGlobal: true, // makes the configuration available globally
+    }),],
   controllers: [AppController],
   providers: [PusherService],
 })
