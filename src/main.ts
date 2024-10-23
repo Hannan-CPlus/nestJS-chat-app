@@ -7,8 +7,9 @@ async function bootstrap() {
   // Define CORS options
   const corsOptions = {
     origin: [process.env.REACT_APP_FRONTEND, 'http://localhost:3000'],
-    methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
+    methods: 'GET,HEAD,PUT,PATCH,POST,DELETE,OPTIONS', // Add OPTIONS here
     credentials: true,
+    allowedHeaders: 'Content-Type, Authorization', // Make sure headers are allowed
   };
 
   // Enable CORS with the options
